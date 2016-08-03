@@ -9,4 +9,7 @@ require_relative './exercise_6'
 puts "Exercise 7"
 puts "----------"
 
-# Your code goes here ...
+
+puts "What store are you looking for?"
+answer = gets.chomp
+bobs = Store.create!(name: answer).save
